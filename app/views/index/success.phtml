@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>resetpwd</title>
+		<link rel="stylesheet" href="/resetpwd/public/css/reglog.css" type="text/css">
+	</head>
+
+	<body>
+		<div class="seagate-header-bar">
+			<img class="img-logo" src='/resetpwd/public/image/seagate-logo.png' alt="seagate">
+		</div>
+		<!--START success-->
+		<div class="seagate-main-content">
+			<div class="success">
+				<h2><img src='/resetpwd/public/image/success.png' alt="success"><?php echo $t["Success"] ?></h2>
+				<p>Please go to Seagate Dashboard and use your new password to login to your Seagate account.</p>
+			</div>
+		</div>
+		<!--END success-->
+		<div class="footer">
+			<div class="footer-content">
+				<div class="language">Language：
+					<span class="selecte"><span id="selected">English</span><span class="down">▼</span><span class="up">▲</span>
+						<ul>
+							<li><?php echo Phalcon\Tag::linkTo("set-language/en", "English") ?></li><li>Français</li><li>Italiano</li><li>Deutsch</li><li>Español</li><li>Nederlands</li><li>Português</li><li>русский</li><li>简体中文</li><li>繁體中文</li><li>한국어</li><li><?php echo Phalcon\Tag::linkTo("set-language/ja", "日本语") ?></li>
+						</ul>
+					</span>
+					
+				</div>
+				<span class="copy">©2012 Seagate Technology LLC</span>
+			</div>
+		</div>
+	</body>
+</html>
